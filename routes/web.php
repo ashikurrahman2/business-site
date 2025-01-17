@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 // Website route
 Route::get('/', [FrontendController:: class, 'index'])->name('index');
 Route::get('/about', [FrontendController:: class, 'About'])->name('about');
+Route::get('/services', [FrontendController:: class, 'Service'])->name('service');
+
 
 // Dashboard route
 Route::get('/dashboard', function () {

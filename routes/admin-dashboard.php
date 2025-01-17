@@ -3,12 +3,9 @@
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\SeoController;
-use App\Http\Controllers\Admin\PropertyController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\ServiceController;
-use App\Http\Controllers\Admin\PartnerController;
-use App\Http\Controllers\Admin\NewsController;
-use App\Http\Controllers\Admin\AgentController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\AdminUserController;
@@ -33,12 +30,9 @@ Route::prefix('admin')->middleware('auth:admin', 'role:super-admin|admin')->grou
 
 Route::prefix('admin')->middleware('auth:admin')->group(function () {
     //Website route
-    Route::resource('property',PropertyController::class);
     Route::resource('service',ServiceController::class);
     Route::resource('about',AboutController::class);
-    Route::resource('news',NewsController::class);
-    Route::resource('agent',AgentController::class);
-    Route::resource('partner',PartnerController::class);
+    Route::resource('product',ProductController::class);
    
 });
 

@@ -35,7 +35,7 @@
 								</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" href="{{ route('about') }}">About Us</a>
-									<a class="dropdown-item" href="service.html">Services</a>
+									<a class="dropdown-item" href="{{ route('service') }}">Services</a>
 									<a class="dropdown-item" href="career.html">Career</a>
 									<a class="dropdown-item" href="testimonial.html">Testimonials</a>
 									<a class="dropdown-item" href="faq.html">Faq</a>
